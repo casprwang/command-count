@@ -3,7 +3,7 @@ project_name: command-count
 
 # Build customization
 builds:
-  - main: cmd/command-count/main.go
+  - main: cmd/cmc/main.go
     binary: cmc
     goos:
       - windows
