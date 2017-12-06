@@ -14,3 +14,4 @@
 .glide/
 
 cmd/command-count/dist
+dist
