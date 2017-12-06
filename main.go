@@ -46,8 +46,6 @@ func GetSlice() ([]KV, int) {
 
 		counter++
 		count[line]++
-		// fmt.Println(len(count))
-		// fmt.Println(">>>", string(line))
 	}
 
 	ss := []KV{}
