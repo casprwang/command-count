@@ -19,7 +19,12 @@ func UserHomeDir() string {
 	return os.Getenv(env)
 }
 
-func GetSlice() {
+type KV struct {
+	Key string
+	Val int
+}
+
+func GetSlice() ([]KV, int) {
 	dir := UserHomeDir()
 
 	filePath := path.Join(dir, ".zsh_history")
@@ -45,22 +50,17 @@ func GetSlice() {
 		// fmt.Println(">>>", string(line))
 	}
 
-	type kv struct {
-		Key string
-		Val int
-	}
-
-	ss := []kv{}
+	ss := []KV{}
 
 	for k, v := range count {
-		ss = append(ss, kv{k, v})
+		ss = append(ss, KV{k, v})
 	}
 
 	sort.Slice(ss, func(i int, j int) bool {
 		return ss[i].Val < ss[j].Val
 	})
 
-	return ss
+	return ss, counter
 
 }
 

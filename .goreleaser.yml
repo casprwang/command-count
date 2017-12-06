@@ -2,7 +2,7 @@
 project_name: command-count
 
 build:
-  main: cmd/node-prune/main.go
+  main: cmd/command-count/main.go
   binary: cmc
   goos:
     - darwin
