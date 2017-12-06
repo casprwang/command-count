@@ -19,4 +19,4 @@ archive:
     darwin: macOS
     linux: Tux
   files:
-    - command-count.licence.txt
+    - LICENSE
