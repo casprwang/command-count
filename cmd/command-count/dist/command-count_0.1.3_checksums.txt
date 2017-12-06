@@ -1,0 +1,4 @@
+8c7d3c03cdcddbd410ac0675122179f4897ff1396c0de9d4b267f08c1ab8283c  command-count_0.1.3_linux_amd64.tar.gz
+3423363a49b6a5783893942325a183fd7c48b35ee5ac00152166ef36878a7aa5  command-count_0.1.3_darwin_386.tar.gz
+dbe6cdd9611162eeb73505a052ee6120992a0468bc0fd6f8506203a26af15da3  command-count_0.1.3_darwin_amd64.tar.gz
+8def7c21f5b6c604966089dab7bd0211db520882079c68268170cca2c8a8f14e  command-count_0.1.3_linux_386.tar.gz

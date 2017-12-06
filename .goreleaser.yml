@@ -1,17 +1,21 @@
 # .goreleaser.yml
 project_name: command-count
 
-build:
-  main: cmd/command-count/main.go
-  binary: cmc
-  goos:
-    - darwin
-    - linux
-  goarch:
-    - amd64
+# Build customization
+builds:
+  - binary: cmc
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+# Archive customization
 archive:
   format: tar.gz
   replacements:
     amd64: 64-bit
     darwin: macOS
     linux: Tux
+  files:
+    - command-count.licence.txt
